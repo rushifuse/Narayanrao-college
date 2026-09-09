@@ -1,0 +1,147 @@
+/* =========================================
+   PROFESSIONAL FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+    background: #111827;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 0%;
+    padding: 0 0 0 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1.5fr;
+
+    gap: 40px;
+}
+
+.footer-col {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.footer-col p {
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff6f00;
+    padding-left: 5px;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    margin-top: 40px;
+    padding: 18px 5%;
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    padding: 0;
+    margin: 0;
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.footer-bottom strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        width: 85%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col h3 {
+        text-align: center;
+    }
+
+    .footer-col p {
+        text-align: center;
+    }
+
+    .footer-col ul {
+        text-align: center;
+    }
+
+}
