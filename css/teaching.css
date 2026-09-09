@@ -1,0 +1,1035 @@
+
+/* =========================================================
+   TEACHING & NON-TEACHING STAFF PAGE
+   PREMIUM COLORFUL DESIGN
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7ff;
+    color: #172033;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+/* =========================
+   STAFF HERO SECTION
+========================= */
+
+.staff-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+    /* Simple clean background */
+    background: #ffffff;
+}
+
+/* =========================
+   COLORFUL BACKGROUND BUBBLES
+========================= */
+
+.hero-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Large Pink Bubble */
+.hero-circle-one {
+    width: 320px;
+    height: 320px;
+    background: rgba(255, 99, 132, 0.13);
+    top: -150px;
+    left: -80px;
+}
+
+/* Purple Bubble */
+.hero-circle-two {
+    width: 220px;
+    height: 220px;
+    background: rgba(155, 89, 255, 0.12);
+    top: 40px;
+    right: 8%;
+}
+
+/* Extra bubbles */
+.staff-hero::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(0, 188, 212, 0.12);
+    bottom: -100px;
+    left: 18%;
+}
+
+.staff-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 193, 7, 0.10);
+    bottom: -180px;
+    right: -70px;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 850px;
+    padding: 70px 20px;
+}
+
+.hero-small-title {
+    display: inline-block;
+    padding: 9px 25px;
+    border: 1px solid #6c63ff;
+    border-radius: 30px;
+    color: #6c63ff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+    font-size: 58px;
+    font-weight: 800;
+    color: #222222;
+}
+
+.hero-content p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+/* Teaching Button */
+.primary-btn {
+    background: #6c63ff;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.25);
+}
+
+.primary-btn:hover {
+    background: #5148e5;
+    transform: translateY(-3px);
+}
+
+/* Non Teaching Button */
+.secondary-btn {
+    background: #ffffff;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+.secondary-btn:hover {
+    background: #6c63ff;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .staff-hero {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        padding: 60px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-circle-one {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-circle-two {
+        width: 150px;
+        height: 150px;
+    }
+
+    .staff-hero::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* =========================================================
+   STAFF SECTION
+========================================================= */
+
+.staff-section {
+    position: relative;
+
+    padding: 85px 6%;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8faff 0%,
+            #eef2ff 100%
+        );
+}
+
+
+.staff-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(99,102,241,0.07);
+
+    left: -160px;
+
+    top: 180px;
+}
+
+
+.staff-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(236,72,153,0.06);
+
+    right: -150px;
+
+    bottom: 100px;
+}
+
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+}
+
+
+.heading-tag {
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ede9fe,
+            #fce7f3
+        );
+
+    color: #6d28d9;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.section-heading h2 {
+    margin: 15px 0 12px;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #312e81,
+            #7c3aed,
+            #db2777
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   STAFF GRID
+========================================================= */
+
+.staff-grid {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+
+
+/* =========================================================
+   STAFF CARD
+========================================================= */
+
+.staff-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8eaf5;
+
+    box-shadow:
+        0 12px 35px rgba(30,41,59,0.09);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.staff-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 25px 60px rgba(79,70,229,0.20);
+}
+
+
+
+/* =========================================================
+   COLORFUL PHOTO AREA
+========================================================= */
+
+.staff-image {
+    position: relative;
+
+    height: 335px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    padding-top: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c7d2fe,
+            #ddd6fe 45%,
+            #fbcfe8
+        );
+}
+
+
+/* Large colorful circle */
+
+.staff-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    top: -130px;
+    right: -80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #ec4899
+        );
+
+    opacity: 0.35;
+}
+
+
+/* Small white circle */
+
+.staff-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    left: -80px;
+    bottom: -65px;
+
+    background: white;
+
+    opacity: 0.28;
+}
+
+
+
+/* =========================================================
+   STAFF PHOTO
+========================================================= */
+
+.staff-image img {
+    position: relative;
+
+    z-index: 3;
+
+    width: 225px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius:
+        120px
+        120px
+        25px
+        25px;
+
+    border: 8px solid rgba(255,255,255,0.95);
+
+    box-shadow:
+        0 18px 40px rgba(49,46,129,0.25);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+.staff-card:hover .staff-image img {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 22px 50px rgba(79,70,229,0.35);
+}
+
+
+
+/* =========================================================
+   STAFF BADGE
+========================================================= */
+
+.staff-badge {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 18px;
+
+    left: 18px;
+
+    padding: 8px 16px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(255,255,255,0.92);
+
+    backdrop-filter: blur(10px);
+
+    color: #4f46e5;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+
+/* =========================================================
+   STAFF INFO
+========================================================= */
+
+.staff-info {
+    position: relative;
+
+    padding: 28px 25px 32px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+.staff-info::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 65px;
+
+    height: 4px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4f46e5,
+            #ec4899
+        );
+}
+
+
+
+/* =========================================================
+   STAFF ICON
+========================================================= */
+
+.staff-icon {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin:
+        -3px
+        auto
+        10px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #fce7f3
+        );
+
+    font-size: 20px;
+}
+
+
+
+/* =========================================================
+   STAFF NAME
+========================================================= */
+
+.staff-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #172033;
+}
+
+
+.designation {
+    margin: 0;
+
+    color: #7c3aed;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.department {
+    display: inline-block;
+
+    margin-top: 13px;
+
+    padding: 7px 15px;
+
+    border-radius: 50px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.staff-divider {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 10px 7%;
+
+    background: #ffffff;
+}
+
+
+.staff-divider span {
+    height: 1px;
+
+    flex: 1;
+
+    max-width: 400px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c7d2fe,
+            transparent
+        );
+}
+
+
+.staff-divider div {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #ec4899
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(79,70,229,0.25);
+}
+
+
+
+/* =========================================================
+   NON-TEACHING SECTION
+========================================================= */
+
+.non-teaching {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #ecfdf5
+        );
+}
+
+
+.non-teaching::before {
+    background: rgba(16,185,129,0.07);
+}
+
+
+.non-teaching::after {
+    background: rgba(6,182,212,0.06);
+}
+
+
+
+/* =========================================================
+   NON-TEACHING HEADING
+========================================================= */
+
+.non-teaching .heading-tag {
+    background:
+        linear-gradient(
+            135deg,
+            #dcfce7,
+            #ccfbf1
+        );
+
+    color: #047857;
+}
+
+
+.non-teaching .section-heading h2 {
+    background:
+        linear-gradient(
+            90deg,
+            #047857,
+            #0891b2
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* =========================================================
+   NON-TEACHING PHOTO
+========================================================= */
+
+.non-teaching .staff-image {
+    background:
+        linear-gradient(
+            135deg,
+            #bbf7d0,
+            #a7f3d0 45%,
+            #bae6fd
+        );
+}
+
+
+.non-teaching .staff-image::before {
+    background:
+        linear-gradient(
+            135deg,
+            #059669,
+            #0891b2
+        );
+}
+
+
+.non-teaching .staff-badge {
+    color: #047857;
+}
+
+
+.non-teaching .staff-info::before {
+    background:
+        linear-gradient(
+            90deg,
+            #059669,
+            #06b6d4
+        );
+}
+
+
+.non-teaching .designation {
+    color: #059669;
+}
+
+
+.non-teaching .staff-card:hover {
+    box-shadow:
+        0 25px 60px rgba(5,150,105,0.18);
+}
+
+
+.non-teaching .staff-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #dcfce7,
+            #cffafe
+        );
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .staff-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+
+    .staff-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .staff-hero {
+        min-height: 330px;
+
+        padding:
+            55px
+            20px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+
+    .hero-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+
+    .hero-btn {
+        padding:
+            11px
+            18px;
+
+        font-size: 13px;
+    }
+
+
+    .staff-section {
+        padding:
+            60px
+            20px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+
+    .staff-image {
+        height: 335px;
+    }
+
+
+    .staff-image img {
+        width: 220px;
+
+        height: 280px;
+    }
+
+
+    .staff-info {
+        padding:
+            27px
+            20px
+            30px;
+    }
+
+
+    .staff-info h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+
+    .hero-small-title {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .staff-section {
+        padding:
+            50px
+            15px;
+    }
+
+
+    .staff-image {
+        height: 300px;
+    }
+
+
+    .staff-image img {
+        width: 200px;
+
+        height: 255px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+}
