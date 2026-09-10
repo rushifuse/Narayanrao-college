@@ -108,100 +108,97 @@
 
 <div class="management">
 
+    <!-- =========================
+         FOUNDER
+    ========================== -->
 
-    <!-- Chairman -->
-
-    <div class="management-card chairman">
+    <div class="management-card chairman"
+         onclick="openProfile('founder')">
 
         <div class="photo-border">
-
             <img src="image/chairman1.jpeg"
-                alt="Chairman">
-
+                 alt="Late Nanasaheb Deshmukh">
         </div>
 
-        <B>Founder & Source of Inspiration
-Late Nanasaheb Deshmukh</b>
+        <b>Founder & Source of Inspiration</b>
 
-<h2>
-    Late Nanasaheb Deshmukh
-</h2>
+        <h2>
+            Late Nanasaheb Deshmukh
+        </h2>
 
+        <p>
+            Founder President and Source of Inspiration
+        </p>
 
-        <p>Founder President and Source of Inspiration
-His vision and dedication laid the foundation of the institution and continue to inspire its educational journey.</p>
+        <span class="click-profile">
+            Click to Read More →
+        </span>
 
     </div>
 
 
+    <!-- =========================
+         PRESIDENT
+    ========================== -->
 
-    <!-- Vice Chairman -->
-
-    <div class="management-card vice-chairman">
+    <div class="management-card vice-chairman"
+         onclick="openProfile('president')">
 
         <div class="photo-border">
-
             <img src="image/chairman2.jpeg"
-                alt="Vice Chairman">
-
+                 alt="Smt. Vasudhatai Deshmukh">
         </div>
 
         <b>President</b>
 
-        <h2>Hon. Smt. Vasudhatai Deshmukh</h2>
-        <b>Former Finance Minister, Government of Maharashtra</b>
+        <h2>
+            Hon. Smt. Vasudhatai Deshmukh
+        </h2>
 
-        <p>President
-Former Finance Minister, Government of Maharashtra
-Her leadership and guidance continue to contribute to the growth and development of the institution.</p>
+        <b>
+            Former Finance Minister, Government of Maharashtra
+        </b>
+
+        <p>
+            President
+        </p>
+
+        <span class="click-profile">
+            Click to Read More →
+        </span>
 
     </div>
 
 
+    <!-- =========================
+         PRINCIPAL
+    ========================== -->
 
-    <!-- President
-
-    <div class="management-card president">
+    <div class="management-card principal"
+         onclick="openProfile('principal')">
 
         <div class="photo-border">
-
-            <img src="image/profile.jpg"
-                alt="President">
-
+            <img src="image/principal.jpeg"
+                 alt="Dr. Nilesh R. Thakare">
         </div>
 
-        <h3>President</h3>
+        <b>Principal</b>
 
-        <p>President Name</p>
+        <h2>
+            Dr. Nilesh R. Thakare
+        </h2>
 
-    </div>
- -->
+        <b>
+            MSc, BEd, PhD, LLB
+        </b>
 
-
-    <!-- Principal -->
-
-    <div class="management-card principal">
-
-        <div class="photo-border">
-
-          <img src="image/principal.jpeg"
-                alt="Principal">
-
-        </div>
-
-        <b>Principal</b> <br>
-        <b>Late Narayanrao Amrutrao Arts, Commerce and BCA College, Chandur Bazar
-Dist. Amravati</b>
-        <h2>Dr. Nilesh R. Thakare</h2>
-
-        <b>MSc , BEd , PhD ,LLB</b>
+        <span class="click-profile">
+            Click to Read More →
+        </span>
 
     </div>
-
 
 </div>
-
-
 
 <!-- =================================
      MAIN CONTENT + NOTICE BOARD
@@ -756,14 +753,27 @@ Dist. Amravati</b>
 
 
 <!-- =================================
-     CALL TO ACTION
+     CALL TO ACTION / COLLEGE GALLERY
 ================================= -->
 
 <section class="ctn">
 
-    <h1>
-        &nbsp;
-    </h1>
+    <div class="ctn-slider">
+
+        <img src="image/slider/1.jpeg" class="ctn-slide active" alt="College Photo">
+        <img src="image/slider/2.jpeg" class="ctn-slide" alt="College Photo">
+        <img src="image/slider/3.jpeg" class="ctn-slide" alt="College Photo">
+        <img src="image/slider/4.jpeg" class="ctn-slide" alt="College Photo">
+        <img src="image/slider/5.jpeg" class="ctn-slide" alt="College Photo">
+       
+
+    </div>
+
+    <div class="ctn-overlay"></div>
+
+    <div class="ctn-content">
+        <h1>Welcome to Narayanrao Amrutrao Deshmukh Arts And Commerce College</h1>
+    </div>
 
 </section>
 
@@ -918,6 +928,79 @@ Dist. Amravati</b>
 
   <input type="text" id="chatInput" placeholder="Type message..." onkeypress="sendMsg(event)">
 </div>
+
+
+
+
+<!-- =========================================
+     PROFILE POPUP
+========================================= -->
+
+<div class="profile-modal" id="profileModal">
+
+    <div class="profile-modal-box">
+
+        <!-- CLOSE -->
+
+        <button class="profile-close"
+                onclick="closeProfile()">
+            ×
+        </button>
+
+
+        <div class="profile-content">
+
+
+            <!-- PHOTO -->
+
+            <div class="profile-image-section">
+
+                <div class="profile-image-border">
+
+                    <img id="profileImage"
+                         src=""
+                         alt="Profile Photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- DETAILS -->
+
+            <div class="profile-details">
+
+                <span class="profile-role"
+                      id="profileRole">
+                </span>
+
+
+                <h2 id="profileName">
+                </h2>
+
+
+                <div class="qualification"
+                     id="profileQualification">
+                </div>
+
+
+                <div class="profile-description">
+
+                    <p id="profileDescription">
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
 
 
 <!-- =================================
